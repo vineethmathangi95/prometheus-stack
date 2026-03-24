@@ -3818,9 +3818,9 @@ prometheus:
   #     someoneelse:$apr1$DMZX2Z4q$6SbQIfyuLQd.xmo/P0m2c.
 
   ingress:
-    enabled: false
+    enabled: true
 
-    ingressClassName: ""
+    ingressClassName: "alb"
 
     annotations: {}
     labels: {}
@@ -3832,7 +3832,7 @@ prometheus:
     ## Must be provided if Ingress is enabled.
     ##
     # hosts:
-    #   - prometheus.domain.com
+    #   - prometheus.example4.xyz
     hosts: []
 
     ## Paths to use for ingress rules - one path should match the prometheusSpec.routePrefix
