@@ -627,7 +627,7 @@ alertmanager:
 
     ingressClassName: ""
 
-    annotations: {}
+    annotations: 
 
     labels: {}
 
